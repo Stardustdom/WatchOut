@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WatchOut</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>WatchOut</h1>
+      <label for="mode">Select Detection Mode:</label>
+      <select id="mode">
+        <option value="single">Single Person Detection</option>
+        <option value="multi">Multiple Figure Detection</option>
+        <option value="alert">Alert</option>
+      </select>
+      <button id="startBtn">Start Detection</button>
+      <button id="stopBtn" disabled>Stop Detection</button>
+      <p id="status"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
