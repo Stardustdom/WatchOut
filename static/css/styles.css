@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Tektur", sans-serif;
+  background: linear-gradient(to right, #530404, #f91414);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tektur-container {
+  font-family: "Tektur", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with desired weight */
+  font-style: normal;
+  font-variation-settings: "wdth" 100; /* Ensure this is valid for the font */
+}
+
+.container {
+  background-color: #dfcdcd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  display: block;
+  color: #555;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  border: none;
+  background-color: #910808;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0b0706;
+  transform: translateY(-2px);
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
